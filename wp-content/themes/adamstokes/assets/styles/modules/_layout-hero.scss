@@ -1,0 +1,54 @@
+.hero-banner {
+    width: 100%;
+    background: $body-color;
+    .layout-hero{
+    	padding-bottom:0;
+    	h1 {
+			color: $white;
+			font-size: $h1-font-size;
+			margin-bottom: ($spacer * .5);
+			 @include media-breakpoint-down(sm) {
+				 font-size: $font-size-lg;
+			  }
+			  @include media-breakpoint-down(xs) {
+				 font-size: $h1-font-size;
+			  }
+		}
+		p {
+			color: $white;
+			a{
+				color:$success;
+				i {
+					padding-right: ($spacer * .5);
+				}
+				@include media-breakpoint-down(sm) {
+				 font-size: $font-size-base;
+			  	}
+			}
+			@include media-breakpoint-down(xs) {
+				 margin-bottom:0;
+			}
+		}
+    	.image{
+		padding-right:($spacer * 3);
+		 @include media-breakpoint-down(xs) {
+				 padding-right:0;
+		 }   
+   		 img{
+   		 	    max-height: 282px;
+    			width: auto;
+   			 }
+   	    }
+    } 
+}
+.m-detail {
+	.bx {
+		width: 100%;
+		a{
+		font-size: ($spacer * 1.5);
+		@include media-breakpoint-down(xs) {
+		 		font-size:$spacer;
+			}
+		}
+	}
+}

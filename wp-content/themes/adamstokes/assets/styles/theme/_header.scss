@@ -1,0 +1,49 @@
+header.banner {
+   border-top: ($border-width * 5) solid $success;
+  	.brand {
+      display: block;
+      padding: ($spacer * .25) ($spacer * .5);
+      text-decoration: none;
+      color: $primary;
+      @include media-breakpoint-down(xs) {
+           padding: ($spacer * .25) 0;
+      }
+  		img {
+  			max-width: 100px;
+  		}
+      .logo-heading{
+      font-size:$h1-font-size;
+      font-weight:$font-weight-bold;
+        @include media-breakpoint-down(xs) {
+           font-size:($spacer * 1.3);
+        }
+      }
+  	}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family:$primary_font_family;
+    }
+ li {
+    display: inline-block;
+    &:last-child {
+      a {
+        color: $success;
+      }
+    }
+  }
+  a {
+    display: block;
+    padding:  ($spacer * .25) ($spacer * 1.2);
+    text-decoration: none;
+    color:$primary;
+    &:hover {
+      color: $success;
+    }
+  }
+}
+
+}

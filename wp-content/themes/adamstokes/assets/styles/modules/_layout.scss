@@ -1,0 +1,50 @@
+body{
+	font-family:$primary_font_family;
+	color:$primary;
+}
+html {
+  scroll-behavior: smooth;
+}
+.layout {
+    padding: $grid-gutter-width 0;
+}
+.slick-dots {
+	padding-left: 0;
+	text-align: center;
+	margin-top: ($spacer * 1.5);
+	li {
+		list-style: none;
+		display: inline-block;
+		a {
+			width: 10px;
+			height: 10px;
+			background: #677386;
+			display: block;
+			border-radius: $rounded-pill;
+			border: 1px solid $white;
+			margin: 0 ($spacer * .5);
+			cursor: pointer;
+		}
+	}
+	li.slick-active {
+		a {
+			background: #43536a;
+		}
+	}
+}
+@include media-breakpoint-down(xs) {
+	.pd-mb {
+		padding-left: ($spacer * 1.5);
+		padding-right: ($spacer * 1.5);
+	}
+}
+.layout-header {
+		@include make-row;
+		margin: 0 0 $spacer 0;
+		justify-content: center;
+	.section-title{
+		font-size:($spacer * 1.7);
+		color:$primary;
+		font-weight: $font-weight-bold;
+	}
+}

@@ -1,0 +1,46 @@
+{
+  "name": "adamstokes",
+  "homepage": "http://adamstokes.com/",
+  "authors": [
+    "Levy Online <webmaster@levyonline.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.4.1",
+    "fancybox": "^3.5.7",
+    "fontawesome": "5.11.2",
+	"slick-carousel": "1.8.1"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "./scss/bootstrap.scss",
+        "./dist/js/bootstrap.bundle.js"
+      ]
+    },
+    "fontawesome": {
+			"main": [
+				"./scss/fontawesome.scss",
+				"./scss/regular.scss",
+				"./scss/solid.scss",
+				"./scss/brands.scss",
+				"./webfonts/fa-brands-400.eot",
+				"./webfonts/fa-brands-400.svg",
+				"./webfonts/fa-brands-400.ttf",
+				"./webfonts/fa-brands-400.woff",
+				"./webfonts/fa-brands-400.woff2",
+				"./webfonts/fa-regular-400.eot",
+				"./webfonts/fa-regular-400.svg",
+				"./webfonts/fa-regular-400.ttf",
+				"./webfonts/fa-regular-400.woff",
+				"./webfonts/fa-regular-400.woff2",
+				"./webfonts/fa-solid-900.eot",
+				"./webfonts/fa-solid-900.svg",
+				"./webfonts/fa-solid-900.ttf",
+				"./webfonts/fa-solid-900.woff",
+				"./webfonts/fa-solid-900.woff2"
+			]
+		}
+  }
+}

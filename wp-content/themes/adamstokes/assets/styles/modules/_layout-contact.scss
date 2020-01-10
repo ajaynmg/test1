@@ -1,0 +1,14 @@
+.contact-section {
+    width: 100%;
+	p {
+		a {
+			color: $success;
+			i {
+					padding-right: ($spacer * .5);
+			}
+		}
+	}
+	.m-detail { 
+		margin-top:($spacer * .5);
+	}
+}

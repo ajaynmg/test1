@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+####
+
+wp-content/themes/adamstokes/bower_components/
+wp-content/themes/adamstokes/dist/
+wp-content/themes/adamstokes/node_modules/
+=======
+#gitignore files and folder
+wp-content/themes/adamstokes/bower_components/
+wp-content/themes/adamstokes/dist/
+wp-content/themes/adamstokes/node_modules/
+
+>>>>>>> ea655de93c274da0b270a15a454b9665c1f05bfe

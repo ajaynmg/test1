@@ -1,0 +1,11 @@
+@import "common/variables";
+
+.acf-field {
+	&.monotype .acf-input > * {
+		font-family: $font-family-monospace;
+	}
+	
+	p.description {
+		font-style: normal;
+	}
+}

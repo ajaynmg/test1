@@ -1,0 +1,29 @@
+html, body:not(#tinymce),
+.wrapper-page {
+	height: 100%;
+	width: 100%;
+}
+
+.wrapper-page {
+	display: flex;
+	flex-direction: column;
+	
+	.wrapper-content {
+		flex: 1 0 auto;
+	}
+}
+
+.main {
+	.has-sidebar & {
+		@include make-col-ready;
+		@include make-col(12);
+		
+		@include media-breakpoint-up(md) {
+			@include make-col(8);
+		}
+		
+		@include media-breakpoint-up(lg) {
+			@include make-col(7);
+		}
+	}
+}

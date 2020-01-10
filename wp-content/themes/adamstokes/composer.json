@@ -1,0 +1,24 @@
+{
+	"name": "levy/adamstokes",
+	"type": "wordpress-theme",
+	"license": "MIT",
+	"description": "",
+	"homepage": "http://adamstokes.com/",
+	"authors": [
+		{
+			"name": "Levy Online",
+			"email": "webmaster@levyonline.com",
+			"homepage": "https://www.levyonline.com/"
+		}
+	],
+	"keywords": [
+		"wordpress"
+	],
+	"support": {
+		"issues": "https://levyonline.atlassian.net/servicedesk/customer/portal/1"
+	},
+	"require": {
+		"php": ">=7.3",
+		"composer/installers": "~1.0"
+	}
+}

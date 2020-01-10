@@ -1,0 +1,203 @@
+// File paths
+$webfonts: "../fonts";
+$fa-font-path: $webfonts;
+
+
+// Grid settings
+
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+$grid-row-columns: 6;
+
+// Grid breakpoints
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 768px,
+	md: 1024px,
+	lg: 1400px,
+	xl: 1920px
+);
+
+// Grid containers
+
+$container-max-widths: (
+	sm: 600px,
+	md: 900px,
+	lg: 1200px,
+	xl: 1600px
+);
+
+// Colors
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+$primary: #192c49;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+$bg-color: #f8f8f8;
+
+
+// Spacing
+
+$spacer: 1rem;
+$spacers: (
+	// Negatives
+	n1: -($spacer * .25),
+	
+	0: 0,
+	
+	// Positives
+	1: ($spacer * .25),
+	2: ($spacer * .5),
+	3: $spacer,
+	4: ($spacer * 1.5),
+	5: ($spacer * 3)
+);
+
+// Body
+$body-bg: $white;
+$body-color: $gray-900;
+
+// Links
+
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: $link-decoration;
+
+
+// Components
+
+$line-height-lg: 1.5;
+$line-height-sm: 1.5;
+
+$border-width: 1px;
+$border-color: $gray-300;
+
+$border-radius: .25rem;
+$border-radius-lg: .3rem;
+$border-radius-sm: .2rem;
+
+$rounded-pill: 50rem;
+
+$box-shadow-sm: 0 .125rem .25rem rgba($black, .075);
+$box-shadow: 0 .5rem 1rem rgba($black, .15);
+$box-shadow-lg: 0 1rem 3rem rgba($black, .175);
+
+$component-active-color: $white;
+$component-active-bg: $primary;
+
+$caret-width: .3em;
+$caret-vertical-align: $caret-width * .85;
+$caret-spacing: $caret-width * .85;
+
+$transition-base: all .2s ease-in-out;
+$transition-fade: opacity .15s linear;
+$transition-collapse: height .35s ease;
+
+$embed-responsive-aspect-ratios: (
+		(21 9),
+		(16 9),
+		(4 3),
+		(1 1),
+);
+
+// Typography
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+$primary_font_family:'Bitter', serif;
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * .875;
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.25;
+$h3-font-size: $font-size-base * 1.125;
+$h4-font-size: $font-size-base;
+$h5-font-size: $font-size-base;
+$h6-font-size: $font-size-base;
+
+$headings-margin-bottom: 1em;
+$headings-font-family: null;
+$headings-font-weight: 500;
+$headings-line-height: 1.2;
+$headings-color: null;
+
+$display1-size: 6rem;
+$display2-size: 5.5rem;
+$display3-size: 4.5rem;
+$display4-size: 3.5rem;
+
+$display1-weight: 300;
+$display2-weight: 300;
+$display3-weight: 300;
+$display4-weight: 300;
+$display-line-height: $headings-line-height;
+
+$lead-font-size: $font-size-base * 1.25;
+$lead-font-weight: 300;
+
+$small-font-size: 80%;
+
+$text-muted: $gray-600;
+
+$blockquote-small-color: $gray-600;
+$blockquote-small-font-size: $small-font-size;
+$blockquote-font-size: $font-size-base * 1.25;
+
+$hr-border-color: rgba($black, .1);
+$hr-border-width: $border-width;
+
+$mark-padding: .2em;
+
+$dt-font-weight: $font-weight-bold;
+
+$kbd-box-shadow: inset 0 -.1rem 0 rgba($black, .25);
+$nested-kbd-font-weight: $font-weight-bold;
+
+$list-inline-padding: .5rem;
+
+$mark-bg: #fcf8e3;
+
+$hr-margin-y: $spacer;
+
+$paragraph-margin-bottom: 1rem;

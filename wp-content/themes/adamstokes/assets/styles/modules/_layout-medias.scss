@@ -1,0 +1,54 @@
+.medias-section {
+    width: 100%;
+    background: $bg-color;
+}
+.layout-medias {
+	.main-slider {
+		width: 100%;
+	}
+	.slider-bx{
+		padding:0 $spacer;
+		height: 100%;
+		@include media-breakpoint-down(xs) {
+		 	padding-left: ($spacer * 1.5);
+			padding-right: ($spacer * 1.5);
+		}
+	   .media-bx {
+	     border-radius:$border-radius;
+    	 padding: ($spacer * 1.5) ($spacer * 1.5) 0 ;
+    	 background: $white;
+    	 height: 100%;
+		  .card{
+		  	 border: none;
+		  	 a{
+		 	 	font-size:($spacer * 1.2);
+		 	 	color:$success;
+		 	 	outline: none;
+		 	 }
+		 	 img{
+		 	 	max-height:180px;
+		 	 	min-height:180px;
+		 	 	object-fit:cover;
+		 	 	border-radius:$border-radius;
+		 	 	width: 100%;
+		 	 	@include media-breakpoint-down(xs) {
+		 	 	  max-height:230px;
+		 	 	  min-height:230px;
+			  	}
+		 	 }
+		  }
+		}
+	}
+	.slick-slide {
+		>div {
+			height: 100%;
+		}
+		height: inherit;
+		display: block;
+		outline:none;
+	}
+	.slick-track {
+		display: -ms-flexbox;
+		display: flex;
+	}	
+}

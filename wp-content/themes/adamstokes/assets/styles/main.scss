@@ -1,0 +1,40 @@
+// TODO: Add custom web fonts
+
+@import "common/variables";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+@import "../../bower_components/fontawesome/scss/fontawesome.scss";
+@import "../../bower_components/fontawesome/scss/regular.scss";
+@import "../../bower_components/fontawesome/scss/solid.scss";
+@import "../../bower_components/fontawesome/scss/brands.scss";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+// endbower
+
+@import "common/global";
+
+// Framework-related styles
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/typography";
+@import "components/tinymce";
+@import "components/wp-classes";
+
+
+// Modules
+@import "modules/layout-articals";
+@import "modules/layout-hero";
+@import "modules/layout-companies";
+@import "modules/layout-medias";
+@import "modules/layout-about";
+@import "modules/layout-contact";
+@import "modules/layout";
+
+// Theme-related styles
+@import "theme/header";
+@import "theme/sidebar";
+@import "theme/footer";
+@import "theme/pages";
+@import "theme/posts";

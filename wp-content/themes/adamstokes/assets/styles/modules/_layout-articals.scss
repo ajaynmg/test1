@@ -1,0 +1,83 @@
+.layout-articles {
+    width: 100%;
+	.first-section {
+		.left-section {
+			img {
+				max-height: 220px;
+				min-height: 220px;
+				width:100%;
+				object-fit: cover;
+				border-radius:$border-radius;
+				@include media-breakpoint-down(xs) {
+		 	 	  max-height:310px;
+		 	 	  min-height:310px;
+			  	}
+			}
+		}
+		.right-section {
+			h2 {
+				font-size: ($spacer * 1.5);
+				color: $success;
+				outline: none;
+				font-weight: $font-weight-bold;
+				margin-bottom: ($spacer * .5);
+				@include media-breakpoint-down(xs) {
+		 	 	  margin-top: ($spacer * .5);
+			  	}
+			}
+		}
+	}
+	.main-slider {
+		width: 100%;
+		margin-top:$spacer;
+	}
+	.slider-bx{
+		padding:0 $spacer;
+		height: 100%;
+		@include media-breakpoint-down(xs) {
+		 	padding-left: ($spacer * 1.5);
+			padding-right: ($spacer * 1.5);
+		}
+	  .media-bx {
+	  	border-radius:$border-radius;
+    	padding: ($spacer * 1.5) ($spacer * 1.5) 0 ;
+    	background: $bg-color;
+    	height: 100%;
+		 .card{
+		 	 border: none;
+		 	 background:none;
+		 	 h2{
+		 	 	font-size:($spacer * 1.2);
+		 	 	color:$success;
+		 	 	outline: none;
+		 	 }
+		 	 p{
+		 	  color:$primary;
+		 	 }
+		 	 a{
+		 	 	font-size:$spacer;
+		 	 	color:$success;
+		 	 	outline: none;
+		 	 }
+		 	 img{
+		 	 	max-height:180px;
+		 	 	min-height:180px;
+		 	 	object-fit:cover;
+		 	 	border-radius:$border-radius;
+		 	 }
+		 }
+		}
+	}
+	.slick-slide {
+		>div {
+			height: 100%;
+		}
+		height: inherit;
+		display: block;
+		float: left;
+	}
+	.slick-track {
+		display: -ms-flexbox;
+		display: flex;
+	}
+}

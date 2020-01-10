@@ -1,0 +1,59 @@
+.about-section {
+    width: 100%;
+    background: $bg-color;
+	.layout-about {
+		.left {
+			img {
+				width: 290px;
+				height: 387px;
+				object-fit: cover;
+			}
+			padding-right: ( $spacer * 7);
+			@include media-breakpoint-down(sm) {
+		 		padding-right: ( $spacer * 1.5);
+			}
+		}
+		.right {
+			@include media-breakpoint-down(xs) {
+					text-align:center;
+					margin-top:( $spacer * .5);
+			}
+			h2 {
+				font-size: ( $spacer * 1.4) ;
+				font-weight: $font-weight-bold;
+				margin-bottom: ( $spacer * .5);
+				color: $primary;
+			}
+			p {
+				font-weight: $font-weight-bold;
+				line-height: $line-height-lg;
+				font-size: ( $spacer * 1.1);
+			}
+			.abt-information {
+				display: flex;
+				flex-direction: column;
+				li {
+					a {
+						color: $success;
+						i {
+							padding-right: ( $spacer * .5);
+						  }
+					}
+				}
+			}
+			.about-logos {
+				margin: 0 (-$spacer);
+				img {
+					max-width: inherit;
+					max-height: 145px;
+					margin:0 $spacer $spacer $spacer;
+					width: auto;
+					@include media-breakpoint-down(sm) {
+						margin:0 ($spacer * .5) ($spacer * .5) ($spacer * .5);
+						max-height: 120px;
+					}	
+				}
+			}
+		 }
+   }
+}

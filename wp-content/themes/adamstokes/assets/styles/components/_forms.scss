@@ -1,0 +1,19 @@
+// Search form
+.search-form {
+	@extend .form-inline;
+	
+	label {
+		font-weight: normal;
+		@extend .form-group;
+	}
+	
+	.search-field {
+		@extend .form-control;
+	}
+	
+	.search-submit {
+		@extend .btn;
+		@extend .btn-secondary;
+	}
+	
+}
